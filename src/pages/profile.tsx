@@ -1,7 +1,7 @@
 import { UserService } from '@/module/user/service/user';
 import { injectable, Presenter } from '@clean-js/presenter';
 import { usePresenter } from '@clean-js/react-presenter';
-import { Image } from 'antd';
+import { Image, Spin } from 'antd';
 import { useEffect } from 'react';
 
 interface IViewState {
@@ -70,13 +70,13 @@ const ProfilePage = () => {
   }, []);
 
   return (
-    <div>
+    <Spin spinning={p.state.loading}>
       <p>
         avatar: <Image src={p.state.avatar} width={100} alt="avatar"></Image>
       </p>
       <p>username: {p.state.username}</p>
       <p>introduction: {p.state.introduction}</p>
-    </div>
+    </Spin>
   );
 };
 

@@ -5,12 +5,13 @@ import { injectable, Presenter } from '@clean-js/presenter';
 import { usePresenter } from '@clean-js/react-presenter';
 import { Button, Form, Input, message, Space } from 'antd';
 
-@injectable()
-class PagePresenter extends Presenter<{
+interface IViewState {
   loading: boolean;
   mobile: string;
   code: string;
-}> {
+}
+@injectable()
+class PagePresenter extends Presenter<IViewState> {
   constructor(private userService: UserService) {
     super();
     this.state = {
