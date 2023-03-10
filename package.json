@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "author": "lujs",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev",
+    "test": "cross-env TS_NODE_TRANSPILE_ONLY=yes jest --passWithNoTests"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "@clean-js/presenter": "^0.1.4",
+    "@clean-js/react-presenter": "^0.1.4",
+    "antd": "^5.3.0",
+    "tslib": "^2.5.0",
+    "umi": "^4.0.57"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5",
+    "@testing-library/react": "^14",
+    "@types/jest": "^29",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "babel-plugin-transform-typescript-metadata": "^0.3.2",
+    "cross-env": "^7",
+    "jest": "^29",
+    "jest-environment-jsdom": "^29",
+    "prettier": "^2",
+    "prettier-plugin-organize-imports": "^2",
+    "prettier-plugin-packagejson": "^2",
+    "ts-node": "^10",
+    "typescript": "^4"
+  }
+}
