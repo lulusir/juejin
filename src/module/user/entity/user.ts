@@ -9,7 +9,7 @@ export class User {
   role = 'member';
   token = '';
 
-  init(data: Partial<Omit<User, 'init'>>) {
+  from(data: Partial<Omit<User, 'init'>>) {
     Object.assign(this, data);
   }
 }

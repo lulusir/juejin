@@ -1,9 +1,9 @@
-import { User } from "./user";
+import { User } from './user';
 
-it("init", () => {
+it('init', () => {
   const u = new User();
-  u.init({
-    username: "lujs",
+  u.from({
+    username: 'lujs',
   });
-  expect(u.username).toBe("lujs");
+  expect(u.username).toBe('lujs');
 });

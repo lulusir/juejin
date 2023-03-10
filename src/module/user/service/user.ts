@@ -12,7 +12,7 @@ export class UserService {
     // mock 请求接口登录
     return new Promise((resolve) => {
       setTimeout(() => {
-        this.user.init({
+        this.user.from({
           token: 'abcdefg',
         });
 
@@ -25,7 +25,7 @@ export class UserService {
     // mock 请求接口登录
     return new Promise<User>((resolve) => {
       setTimeout(() => {
-        this.user.init({
+        this.user.from({
           avatar:
             'https://p3-passport.byteimg.com/img/user-avatar/2245576e2112372252f4fbd62c7c9014~180x180.awebp',
           introduction: '欢乐堡什么都有，唯独没有欢乐',
